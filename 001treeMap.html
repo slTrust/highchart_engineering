@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./scripts/jquery-2.1.1.js"></script>
+    <script src="./scripts/highcharts/highcharts.js"></script>
+    <script src="./scripts/highcharts/modules/treemap.js"></script>
+    <script src="./scripts/highcharts/exporting.js"></script>
+</head>
+<body>
+    <div id="container" style="width:60%;margin:100px auto;"></div>
+    <script src="./scripts/chart/chart_tree.js"></script>
+    <script src="./data/tree.js"></script>
+    <script>
+        var funcSpace={};
+        nameSpace('aa');
+        funcSpace['aa'].chartTree(treeData,'#container',{})
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./scripts/jquery-2.1.1.js"></script>
+    <script src="./scripts/highcharts/highcharts.js"></script>
+    <script src="./scripts/highcharts/highcharts-more.js"></script>
+    <script src="./scripts/highcharts/exporting.js"></script>
+</head>
+<body>
+    <div id="container" style="width:60%;margin:100px auto;"></div>
+    <script src="./scripts/chart/chart_bubble.js"></script>
+    <script src="./data/bubble.js"></script>
+    <script>
+        var funcSpace={};
+        nameSpace('aa');
+        funcSpace['aa'].chartBubble(bubbleData,'#container',{xTitle:'泌乳天数',yTitle:'在栏时间',zTitle:'产奶量'})
+  
+    </script>
+</body>
+</html>
