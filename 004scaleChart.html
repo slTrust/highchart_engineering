@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./scripts/jquery-2.1.1.js"></script>
+    <script src="./scripts/highcharts/highcharts.js"></script>
+    <script src="./scripts/highcharts/exporting.js"></script>
+    <script src="./scripts/highcharts/no-data-to-display.js"></script>
+</head>
+<body>
+    <div id="container" style="width:60%;margin:100px auto;"></div>
+    <script src="./scripts/chart/chart_scale.js"></script>
+    <script src="./data/scale.js"></script>
+    <script>
+        var funcSpace={};
+        nameSpace('aa');
+        var data =scaleData;
+        funcSpace['aa'].chartScatter(data,'#container',{
+				chartTitle:'产奶趋势',
+				chartSubTitle:'2014-01-01-2017-11-11',
+				xTitle:'泌乳天数',
+				yTitle:'产奶量',
+				xMax:null, 
+				xMin:0,
+				yMax:null,
+				yMin:0,  
+			    legendShow:false  //是否显示图例
+			})
+  
+    </script>
+</body>
+</html>
